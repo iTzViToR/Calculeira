@@ -1,0 +1,775 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\lcdtest.X.production.o
+cinit CODE 0 7DE 7DE 22 2
+text1 CODE 0 8C 8C 35 2
+text2 CODE 0 4AF 4AF 100 2
+text3 CODE 0 FE FE 41 2
+text4 CODE 0 184 184 4B 2
+text5 CODE 0 FC3 FC3 15 2
+text6 CODE 0 30A 30A B0 2
+text7 CODE 0 1CF 1CF 57 2
+text8 CODE 0 13F 13F 45 2
+text9 CODE 0 297 297 73 2
+text10 CODE 0 57 57 35 2
+text11 CODE 0 29 29 2E 2
+text12 CODE 0 3BA 3BA F5 2
+text13 CODE 0 C1 C1 3D 2
+text14 CODE 0 FD8 FD8 28 2
+text15 CODE 0 226 226 71 2
+nvBANK0 BANK0 1 20 20 12 1
+maintext CODE 0 5AF 5AF 22F 2
+cstackCOMMON COMMON 1 70 70 E 1
+cstackBANK0 BANK0 1 32 32 10 1
+inittext CODE 0 FB0 FB0 13 2
+bssBANK0 BANK0 1 42 42 D 1
+bssBANK1 BANK1 1 A0 A0 4B 1
+idataBANK0 CODE 0 FA3 FA3 D 2
+strings STRING 0 3 3 23 2
+dataBANK0 BANK0 1 4F 4F D 1
+clrtext CODE 0 F9B F9B 8 2
+$C:\Users\22102679\AppData\Local\Temp\s1to.o
+end_init CODE 0 0 0 3 2
+config CONFIG 0 2007 2007 1 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 5C-6F 1
+RAM EB-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 5C-6F 1
+BANK1 EB-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 26-28 2
+CONST 800-F9A 2
+CONST 1000-1FFF 2
+ENTRY 26-28 2
+ENTRY 800-F9A 2
+ENTRY 1000-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 26-28 2
+CODE 800-F9A 2
+CODE 1000-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+CONFIG 2008-2008 2
+EEDATA 2100-21FF 2
+STRCODE 26-28 2
+STRCODE 800-F9A 2
+STRCODE 1000-1FFF 2
+STRING 26-28 2
+STRING 800-F9A 2
+STRING 1000-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\lcdtest.X.production.o
+7DE cinit CODE >757:C:\Users\22102679\AppData\Local\Temp\s1to.
+7DE cinit CODE >760:C:\Users\22102679\AppData\Local\Temp\s1to.
+7DE cinit CODE >837:C:\Users\22102679\AppData\Local\Temp\s1to.
+7DF cinit CODE >838:C:\Users\22102679\AppData\Local\Temp\s1to.
+7E0 cinit CODE >839:C:\Users\22102679\AppData\Local\Temp\s1to.
+7E1 cinit CODE >840:C:\Users\22102679\AppData\Local\Temp\s1to.
+7E2 cinit CODE >841:C:\Users\22102679\AppData\Local\Temp\s1to.
+7E3 cinit CODE >842:C:\Users\22102679\AppData\Local\Temp\s1to.
+7E4 cinit CODE >843:C:\Users\22102679\AppData\Local\Temp\s1to.
+7E5 cinit CODE >844:C:\Users\22102679\AppData\Local\Temp\s1to.
+7E6 cinit CODE >845:C:\Users\22102679\AppData\Local\Temp\s1to.
+7E7 cinit CODE >846:C:\Users\22102679\AppData\Local\Temp\s1to.
+7EC cinit CODE >865:C:\Users\22102679\AppData\Local\Temp\s1to.
+7ED cinit CODE >866:C:\Users\22102679\AppData\Local\Temp\s1to.
+7EE cinit CODE >867:C:\Users\22102679\AppData\Local\Temp\s1to.
+7EF cinit CODE >868:C:\Users\22102679\AppData\Local\Temp\s1to.
+7F4 cinit CODE >871:C:\Users\22102679\AppData\Local\Temp\s1to.
+7F5 cinit CODE >872:C:\Users\22102679\AppData\Local\Temp\s1to.
+7F6 cinit CODE >873:C:\Users\22102679\AppData\Local\Temp\s1to.
+7F7 cinit CODE >874:C:\Users\22102679\AppData\Local\Temp\s1to.
+7FC cinit CODE >880:C:\Users\22102679\AppData\Local\Temp\s1to.
+7FC cinit CODE >882:C:\Users\22102679\AppData\Local\Temp\s1to.
+7FD cinit CODE >883:C:\Users\22102679\AppData\Local\Temp\s1to.
+226 text15 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+226 text15 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+227 text15 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+22B text15 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+230 text15 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+233 text15 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+233 text15 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+237 text15 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+23C text15 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+241 text15 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+241 text15 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+243 text15 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+249 text15 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+24B text15 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+24C text15 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+253 text15 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+258 text15 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+258 text15 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+25E text15 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+25E text15 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+265 text15 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+26F text15 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+275 text15 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+277 text15 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+277 text15 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+27E text15 CODE >36:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+286 text15 CODE >37:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+286 text15 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+28B text15 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+291 text15 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+296 text15 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+FD8 text14 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul16.c
+FD8 text14 CODE >43:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul16.c
+FDB text14 CODE >44:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul16.c
+FDB text14 CODE >45:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul16.c
+FDF text14 CODE >46:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul16.c
+FE5 text14 CODE >47:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul16.c
+FEC text14 CODE >48:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul16.c
+FF3 text14 CODE >49:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul16.c
+FFA text14 CODE >52:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul16.c
+FFF text14 CODE >53:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul16.c
+C1 text13 CODE >43:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+C1 text13 CODE >47:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+C9 text13 CODE >49:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+CA text13 CODE >50:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+CB text13 CODE >51:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+CC text13 CODE >52:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+CD text13 CODE >53:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+D1 text13 CODE >54:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+D9 text13 CODE >56:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+DA text13 CODE >57:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+DB text13 CODE >58:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+DC text13 CODE >59:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+DD text13 CODE >60:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+E1 text13 CODE >61:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+E9 text13 CODE >63:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+EA text13 CODE >64:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+EB text13 CODE >65:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+EC text13 CODE >66:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+ED text13 CODE >67:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+F1 text13 CODE >68:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+F2 text13 CODE >70:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+F3 text13 CODE >71:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+F4 text13 CODE >72:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+F5 text13 CODE >73:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+F6 text13 CODE >74:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+FB text13 CODE >75:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+FD text13 CODE >76:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+3BA text12 CODE >78:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+3BA text12 CODE >80:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+3BF text12 CODE >81:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+3C5 text12 CODE >83:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+3CE text12 CODE >84:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+3D6 text12 CODE >85:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+3D7 text12 CODE >86:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+3DA text12 CODE >87:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+3DD text12 CODE >88:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+3E0 text12 CODE >89:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+3E3 text12 CODE >90:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+3E6 text12 CODE >91:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+3FA text12 CODE >92:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+3FF text12 CODE >94:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+408 text12 CODE >95:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+410 text12 CODE >96:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+411 text12 CODE >97:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+414 text12 CODE >98:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+417 text12 CODE >99:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+41A text12 CODE >100:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+41D text12 CODE >101:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+420 text12 CODE >102:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+434 text12 CODE >103:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+439 text12 CODE >105:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+442 text12 CODE >106:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+44A text12 CODE >107:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+44B text12 CODE >108:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+44E text12 CODE >109:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+451 text12 CODE >110:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+454 text12 CODE >111:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+457 text12 CODE >112:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+45A text12 CODE >113:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+46E text12 CODE >114:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+473 text12 CODE >116:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+47C text12 CODE >117:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+484 text12 CODE >118:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+485 text12 CODE >119:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+488 text12 CODE >120:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+48B text12 CODE >121:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+48E text12 CODE >122:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+491 text12 CODE >123:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+494 text12 CODE >124:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+4A9 text12 CODE >125:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+4AC text12 CODE >126:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+4AE text12 CODE >127:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+29 text11 CODE >7:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+29 text11 CODE >9:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+2F text11 CODE >11:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+41 text11 CODE >12:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+42 text11 CODE >13:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+42 text11 CODE >15:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+56 text11 CODE >16:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+56 text11 CODE >17:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+57 text10 CODE >20:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+57 text10 CODE >22:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+6A text10 CODE >23:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+72 text10 CODE >24:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+84 text10 CODE >25:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+8B text10 CODE >26:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+297 text9 CODE >28:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+297 text9 CODE >30:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+2AC text9 CODE >31:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+2C8 text9 CODE >32:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+2E7 text9 CODE >33:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+309 text9 CODE >35:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+13F text8 CODE >37:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+13F text8 CODE >39:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+154 text8 CODE >41:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+16A text8 CODE >42:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+16F text8 CODE >43:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+17E text8 CODE >44:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+183 text8 CODE >45:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+1CF text7 CODE >81:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+1D0 text7 CODE >83:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+1E5 text7 CODE >84:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+1F5 text7 CODE >85:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+1F6 text7 CODE >87:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+214 text7 CODE >85:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+214 text7 CODE >88:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+225 text7 CODE >89:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+30A text6 CODE >47:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+30D text6 CODE >50:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+316 text6 CODE >51:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+31F text6 CODE >52:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+328 text6 CODE >53:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+332 text6 CODE >54:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+33C text6 CODE >55:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+346 text6 CODE >56:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+350 text6 CODE >57:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+35A text6 CODE >58:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+364 text6 CODE >60:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+36D text6 CODE >61:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+376 text6 CODE >62:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+37B text6 CODE >64:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+389 text6 CODE >65:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+397 text6 CODE >66:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+3A5 text6 CODE >67:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+3B1 text6 CODE >69:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+3B9 text6 CODE >73:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+FC3 text5 CODE >75:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+FC3 text5 CODE >77:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+FCF text5 CODE >78:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+FD7 text5 CODE >79:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+184 text4 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+184 text4 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+186 text4 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+18C text4 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+18E text4 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+18F text4 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+196 text4 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+19B text4 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+19B text4 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1A1 text4 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1A1 text4 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1A8 text4 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1B2 text4 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1B8 text4 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1BA text4 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1BA text4 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1C1 text4 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1C9 text4 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1C9 text4 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+1CE text4 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+FE text3 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwmod.c
+FE text3 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwmod.c
+104 text3 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwmod.c
+106 text3 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwmod.c
+107 text3 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwmod.c
+10E text3 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwmod.c
+113 text3 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwmod.c
+113 text3 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwmod.c
+119 text3 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwmod.c
+119 text3 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwmod.c
+123 text3 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwmod.c
+12A text3 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwmod.c
+131 text3 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwmod.c
+139 text3 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwmod.c
+139 text3 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwmod.c
+13E text3 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwmod.c
+4AF text2 CODE >500:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+4B2 text2 CODE >545:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+4B6 text2 CODE >548:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+4B7 text2 CODE >550:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+4BD text2 CODE >553:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+4C8 text2 CODE >554:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+4C9 text2 CODE >555:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+4C9 text2 CODE >560:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+4CA text2 CODE >654:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+4CB text2 CODE >656:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+4CB text2 CODE >657:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+4CC text2 CODE >716:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+4CD text2 CODE >717:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+4CD text2 CODE >718:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+4CE text2 CODE >821:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+4CE text2 CODE >832:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+4CF text2 CODE >841:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+4ED text2 CODE >1278:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+4F9 text2 CODE >1280:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+4FD text2 CODE >1281:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+501 text2 CODE >1282:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+507 text2 CODE >1283:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+507 text2 CODE >1324:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+511 text2 CODE >1325:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+52D text2 CODE >1326:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+539 text2 CODE >1457:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+53F text2 CODE >1458:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+54B text2 CODE >1491:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+54F text2 CODE >1493:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+550 text2 CODE >1508:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+57E text2 CODE >1543:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+58A text2 CODE >1493:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+58A text2 CODE >1544:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+595 text2 CODE >548:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+595 text2 CODE >1552:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+5A9 text2 CODE >1554:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+5A9 text2 CODE >1557:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+5AE text2 CODE >1559:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+5AE text2 CODE >1560:C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+8C text1 CODE >111:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+8F text1 CODE >113:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+A2 text1 CODE >114:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+B1 text1 CODE >115:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+C0 text1 CODE >116:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+5AF maintext CODE >143:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+5AF maintext CODE >147:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+5B2 maintext CODE >148:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+5B5 maintext CODE >149:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+5B9 maintext CODE >150:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+5BC maintext CODE >151:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+5BF maintext CODE >152:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+5C0 maintext CODE >154:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+5C6 maintext CODE >155:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+5D6 maintext CODE >156:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+5E5 maintext CODE >157:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+5EE maintext CODE >160:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+5EE maintext CODE >162:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+5F8 maintext CODE >164:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+604 maintext CODE >165:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+63E maintext CODE >167:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+673 maintext CODE >168:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+673 maintext CODE >170:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+679 maintext CODE >171:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+67D maintext CODE >172:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+692 maintext CODE >173:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+692 maintext CODE >175:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+698 maintext CODE >176:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+69C maintext CODE >177:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+6B1 maintext CODE >178:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+6B1 maintext CODE >180:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+6B7 maintext CODE >181:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+6BB maintext CODE >182:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+6D0 maintext CODE >183:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+6D0 maintext CODE >184:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+6D6 maintext CODE >185:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+6DA maintext CODE >186:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+6EF maintext CODE >187:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+6EF maintext CODE >191:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+6F6 maintext CODE >192:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+6F7 maintext CODE >193:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+6FF maintext CODE >194:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+713 maintext CODE >195:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+714 maintext CODE >196:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+723 maintext CODE >197:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+737 maintext CODE >198:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+738 maintext CODE >199:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+74B maintext CODE >200:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+75F maintext CODE >201:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+760 maintext CODE >202:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+773 maintext CODE >203:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+788 maintext CODE >204:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+788 maintext CODE >206:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+789 maintext CODE >207:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+79D maintext CODE >209:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+7AB maintext CODE >210:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+7C2 maintext CODE >211:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+7C2 maintext CODE >214:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+7C8 maintext CODE >215:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+7D0 maintext CODE >216:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+7D2 maintext CODE >217:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+7D4 maintext CODE >218:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+7D6 maintext CODE >219:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+7D9 maintext CODE >220:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+7DA maintext CODE >221:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+7DB maintext CODE >222:X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+F9B clrtext CODE >852:C:\Users\22102679\AppData\Local\Temp\s1to.
+F9B clrtext CODE >853:C:\Users\22102679\AppData\Local\Temp\s1to.
+F9C clrtext CODE >854:C:\Users\22102679\AppData\Local\Temp\s1to.
+F9C clrtext CODE >855:C:\Users\22102679\AppData\Local\Temp\s1to.
+F9D clrtext CODE >856:C:\Users\22102679\AppData\Local\Temp\s1to.
+F9E clrtext CODE >857:C:\Users\22102679\AppData\Local\Temp\s1to.
+F9F clrtext CODE >858:C:\Users\22102679\AppData\Local\Temp\s1to.
+FA0 clrtext CODE >859:C:\Users\22102679\AppData\Local\Temp\s1to.
+FA1 clrtext CODE >860:C:\Users\22102679\AppData\Local\Temp\s1to.
+FA2 clrtext CODE >861:C:\Users\22102679\AppData\Local\Temp\s1to.
+FB0 inittext CODE >811:C:\Users\22102679\AppData\Local\Temp\s1to.
+FB0 inittext CODE >812:C:\Users\22102679\AppData\Local\Temp\s1to.
+FB1 inittext CODE >813:C:\Users\22102679\AppData\Local\Temp\s1to.
+FB2 inittext CODE >814:C:\Users\22102679\AppData\Local\Temp\s1to.
+FB3 inittext CODE >815:C:\Users\22102679\AppData\Local\Temp\s1to.
+FB4 inittext CODE >822:C:\Users\22102679\AppData\Local\Temp\s1to.
+FB4 inittext CODE >823:C:\Users\22102679\AppData\Local\Temp\s1to.
+FB9 inittext CODE >824:C:\Users\22102679\AppData\Local\Temp\s1to.
+FBA inittext CODE >825:C:\Users\22102679\AppData\Local\Temp\s1to.
+FBB inittext CODE >826:C:\Users\22102679\AppData\Local\Temp\s1to.
+FBC inittext CODE >827:C:\Users\22102679\AppData\Local\Temp\s1to.
+FBD inittext CODE >828:C:\Users\22102679\AppData\Local\Temp\s1to.
+FBE inittext CODE >829:C:\Users\22102679\AppData\Local\Temp\s1to.
+FBF inittext CODE >830:C:\Users\22102679\AppData\Local\Temp\s1to.
+FC0 inittext CODE >831:C:\Users\22102679\AppData\Local\Temp\s1to.
+FC1 inittext CODE >832:C:\Users\22102679\AppData\Local\Temp\s1to.
+FC2 inittext CODE >833:C:\Users\22102679\AppData\Local\Temp\s1to.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+___awdiv@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\lcdtest.X.production.o
+___lwmod@counter 7D 0 COMMON 1 cstackCOMMON dist/default/production\lcdtest.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 2008 0 ABS 0 - -
+__Hspace_1 EB 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+byte@dado 34 0 BANK0 1 cstackBANK0 dist/default/production\lcdtest.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+_D4 2C 0 BANK0 1 nvBANK0 dist/default/production\lcdtest.X.production.o
+_D5 2A 0 BANK0 1 nvBANK0 dist/default/production\lcdtest.X.production.o
+_D6 28 0 BANK0 1 nvBANK0 dist/default/production\lcdtest.X.production.o
+_D7 26 0 BANK0 1 nvBANK0 dist/default/production\lcdtest.X.production.o
+_EN 2E 0 BANK0 1 nvBANK0 dist/default/production\lcdtest.X.production.o
+_RS 30 0 BANK0 1 nvBANK0 dist/default/production\lcdtest.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+__size_of_escreve 0 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\22102679\AppData\Local\Temp\s1to.o
+_byte 27E 0 CODE 0 text8 dist/default/production\lcdtest.X.production.o
+_main B5E 0 CODE 0 maintext dist/default/production\lcdtest.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+start 0 0 CODE 0 init C:\Users\22102679\AppData\Local\Temp\s1to.o
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+__size_of_byte 0 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+__size_of___lwmod 0 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+escreve@col 38 0 BANK0 1 cstackBANK0 dist/default/production\lcdtest.X.production.o
+escreve@lin 7D 0 COMMON 1 cstackCOMMON dist/default/production\lcdtest.X.production.o
+escreve@str 39 0 BANK0 1 cstackBANK0 dist/default/production\lcdtest.X.production.o
+?___wmul 70 0 COMMON 1 cstackCOMMON dist/default/production\lcdtest.X.production.o
+_usa_caractere 118 0 CODE 0 text1 dist/default/production\lcdtest.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__Hpowerup 0 0 CODE 0 powerup -
+intlevel0 0 0 ENTRY 0 functab C:\Users\22102679\AppData\Local\Temp\s1to.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\22102679\AppData\Local\Temp\s1to.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\22102679\AppData\Local\Temp\s1to.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\22102679\AppData\Local\Temp\s1to.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\22102679\AppData\Local\Temp\s1to.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\22102679\AppData\Local\Temp\s1to.o
+wtemp0 7E 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+_coluna_atual 4A 0 BANK0 1 bssBANK0 dist/default/production\lcdtest.X.production.o
+__le_teclado 774 0 CODE 0 text12 dist/default/production\lcdtest.X.production.o
+___awdiv@sign 76 0 COMMON 1 cstackCOMMON dist/default/production\lcdtest.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+___wmul@multiplicand 72 0 COMMON 1 cstackCOMMON dist/default/production\lcdtest.X.production.o
+_ANSELH 189 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+___awdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\lcdtest.X.production.o
+__end_of___wmul 2000 0 CODE 0 text14 dist/default/production\lcdtest.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__end_of_escreve 44C 0 CODE 0 text7 dist/default/production\lcdtest.X.production.o
+__size_of_sprintf 0 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+_operacao 42 0 BANK0 1 bssBANK0 dist/default/production\lcdtest.X.production.o
+__LnvBANK0 0 0 ABS 0 nvBANK0 -
+___awdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\lcdtest.X.production.o
+___lwmod@divisor 78 0 COMMON 1 cstackCOMMON dist/default/production\lcdtest.X.production.o
+__end_of___awdiv 52E 0 CODE 0 text15 dist/default/production\lcdtest.X.production.o
+muda_pin@_port 70 0 COMMON 1 cstackCOMMON dist/default/production\lcdtest.X.production.o
+__end_of___lwdiv 39E 0 CODE 0 text4 dist/default/production\lcdtest.X.production.o
+__end_of___lwmod 27E 0 CODE 0 text3 dist/default/production\lcdtest.X.production.o
+_dpowers 26 0 STRING 0 strings dist/default/production\lcdtest.X.production.o
+__end_of_enable 118 0 CODE 0 text10 dist/default/production\lcdtest.X.production.o
+__size_of_usa_caractere 0 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+___lwdiv@quotient 75 0 COMMON 1 cstackCOMMON dist/default/production\lcdtest.X.production.o
+__size_of_limpa 0 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+___lwmod@dividend 7A 0 COMMON 1 cstackCOMMON dist/default/production\lcdtest.X.production.o
+__muda_linha 182 0 CODE 0 text13 dist/default/production\lcdtest.X.production.o
+start_initialization FBC 0 CODE 0 cinit dist/default/production\lcdtest.X.production.o
+nibble@dado 78 0 COMMON 1 cstackCOMMON dist/default/production\lcdtest.X.production.o
+clear_ram0 1F36 0 CODE 0 clrtext dist/default/production\lcdtest.X.production.o
+__end_of_nibble 614 0 CODE 0 text9 dist/default/production\lcdtest.X.production.o
+__pcstackBANK0 32 0 BANK0 1 cstackBANK0 dist/default/production\lcdtest.X.production.o
+__end_of_usa_caractere 182 0 CODE 0 text1 dist/default/production\lcdtest.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\22102679\AppData\Local\Temp\s1to.o
+muda_pin@_pin 72 0 COMMON 1 cstackCOMMON dist/default/production\lcdtest.X.production.o
+muda_pin@_val 74 0 COMMON 1 cstackCOMMON dist/default/production\lcdtest.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 1000 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__stringbase 24 0 STRING 0 strings dist/default/production\lcdtest.X.production.o
+___lwdiv@counter 77 0 COMMON 1 cstackCOMMON dist/default/production\lcdtest.X.production.o
+byte@escreve 32 0 BANK0 1 cstackBANK0 dist/default/production\lcdtest.X.production.o
+__Hmaintext 0 0 ABS 0 maintext -
+__end_of_sprintf B5E 0 CODE 0 text2 dist/default/production\lcdtest.X.production.o
+__size_of_lcd_init 0 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 0 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit FBC 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lstack 0 0 STACK 2 stack -
+__Linittext 0 0 ABS 0 inittext -
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 0 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 0 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__pnvBANK0 20 0 BANK0 1 nvBANK0 dist/default/production\lcdtest.X.production.o
+___wmul 1FB0 0 CODE 0 text14 dist/default/production\lcdtest.X.production.o
+_port_data 20 0 BANK0 1 nvBANK0 dist/default/production\lcdtest.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_RD0 40 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+_RD1 41 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+_RD2 42 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+_RD3 43 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+_RD4 44 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+_RD5 45 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+_RD6 46 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+_RD7 47 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+__S0 2008 0 ABS 0 - -
+__S1 EB 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_buffer A0 0 BANK1 1 bssBANK1 dist/default/production\lcdtest.X.production.o
+__CFG_FOSC$INTRC_NOCLKOUT 0 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+_linha_atual 48 0 BANK0 1 bssBANK0 dist/default/production\lcdtest.X.production.o
+lcd_init@lcd_pins 38 0 BANK0 1 cstackBANK0 dist/default/production\lcdtest.X.production.o
+_enable AE 0 CODE 0 text10 dist/default/production\lcdtest.X.production.o
+sprintf@val 3B 0 BANK0 1 cstackBANK0 dist/default/production\lcdtest.X.production.o
+_lcd_init 614 0 CODE 0 text6 dist/default/production\lcdtest.X.production.o
+_lcd_pins 50 0 BANK0 1 dataBANK0 dist/default/production\lcdtest.X.production.o
+__HnvBANK0 0 0 ABS 0 nvBANK0 -
+__Lintentry 0 0 CODE 0 intentry -
+__stringtab 6 0 STRING 0 strings dist/default/production\lcdtest.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\22102679\AppData\Local\Temp\s1to.o
+__end_of__le_teclado 95E 0 CODE 0 text12 dist/default/production\lcdtest.X.production.o
+__pdataBANK0 4F 0 BANK0 1 dataBANK0 dist/default/production\lcdtest.X.production.o
+__size_of___wmul 0 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__end_of_lcd_init 774 0 CODE 0 text6 dist/default/production\lcdtest.X.production.o
+_escreve 39E 0 CODE 0 text7 dist/default/production\lcdtest.X.production.o
+sprintf@flag 39 0 BANK0 1 cstackBANK0 dist/default/production\lcdtest.X.production.o
+sprintf@prec 3A 0 BANK0 1 cstackBANK0 dist/default/production\lcdtest.X.production.o
+__ptext10 AE 0 CODE 0 text10 dist/default/production\lcdtest.X.production.o
+__ptext11 52 0 CODE 0 text11 dist/default/production\lcdtest.X.production.o
+__ptext12 774 0 CODE 0 text12 dist/default/production\lcdtest.X.production.o
+__ptext13 182 0 CODE 0 text13 dist/default/production\lcdtest.X.production.o
+__ptext14 1FB0 0 CODE 0 text14 dist/default/production\lcdtest.X.production.o
+__ptext15 44C 0 CODE 0 text15 dist/default/production\lcdtest.X.production.o
+_nibble 52E 0 CODE 0 text9 dist/default/production\lcdtest.X.production.o
+___awdiv 44C 0 CODE 0 text15 dist/default/production\lcdtest.X.production.o
+___lwdiv 308 0 CODE 0 text4 dist/default/production\lcdtest.X.production.o
+___lwmod 1FC 0 CODE 0 text3 dist/default/production\lcdtest.X.production.o
+usa_caractere@col 7C 0 COMMON 1 cstackCOMMON dist/default/production\lcdtest.X.production.o
+usa_caractere@lin 39 0 BANK0 1 cstackBANK0 dist/default/production\lcdtest.X.production.o
+__pmaintext B5E 0 CODE 0 maintext dist/default/production\lcdtest.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 400E 0 CONFIG 0 config -
+__size_of_enable 0 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+__Hinittext 0 0 ABS 0 inittext -
+___wmul@multiplier 70 0 COMMON 1 cstackCOMMON dist/default/production\lcdtest.X.production.o
+___lwdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\lcdtest.X.production.o
+stackhi 0 0 ABS 0 - C:\Users\22102679\AppData\Local\Temp\s1to.o
+stacklo 0 0 ABS 0 - C:\Users\22102679\AppData\Local\Temp\s1to.o
+__end_of__stringtab 26 0 STRING 0 strings dist/default/production\lcdtest.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__end_of__muda_linha 1FC 0 CODE 0 text13 dist/default/production\lcdtest.X.production.o
+init_fetch0 1F60 0 CODE 0 inittext dist/default/production\lcdtest.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 0 0 CODE 0 end_init -
+__size_of_nibble 0 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization FF8 0 CODE 0 cinit dist/default/production\lcdtest.X.production.o
+__Hintentry 0 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+___awdiv@quotient 77 0 COMMON 1 cstackCOMMON dist/default/production\lcdtest.X.production.o
+?___awdiv 70 0 COMMON 1 cstackCOMMON dist/default/production\lcdtest.X.production.o
+___lwdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\lcdtest.X.production.o
+?___lwdiv 70 0 COMMON 1 cstackCOMMON dist/default/production\lcdtest.X.production.o
+?___lwmod 78 0 COMMON 1 cstackCOMMON dist/default/production\lcdtest.X.production.o
+__Hreset_vec 0 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__size_of_muda_pin 0 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+__ptext1 118 0 CODE 0 text1 dist/default/production\lcdtest.X.production.o
+__ptext2 95E 0 CODE 0 text2 dist/default/production\lcdtest.X.production.o
+__ptext3 1FC 0 CODE 0 text3 dist/default/production\lcdtest.X.production.o
+__ptext4 308 0 CODE 0 text4 dist/default/production\lcdtest.X.production.o
+__ptext5 1F86 0 CODE 0 text5 dist/default/production\lcdtest.X.production.o
+__ptext6 614 0 CODE 0 text6 dist/default/production\lcdtest.X.production.o
+__ptext7 39E 0 CODE 0 text7 dist/default/production\lcdtest.X.production.o
+__ptext8 27E 0 CODE 0 text8 dist/default/production\lcdtest.X.production.o
+__ptext9 52E 0 CODE 0 text9 dist/default/production\lcdtest.X.production.o
+_sprintf 95E 0 CODE 0 text2 dist/default/production\lcdtest.X.production.o
+usa_caractere@caractere 7D 0 COMMON 1 cstackCOMMON dist/default/production\lcdtest.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+sprintf@ap 38 0 BANK0 1 cstackBANK0 dist/default/production\lcdtest.X.production.o
+sprintf@sp 3D 0 BANK0 1 cstackBANK0 dist/default/production\lcdtest.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__size_of__le_teclado 0 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+__end_of__initialization FF8 0 CODE 0 cinit dist/default/production\lcdtest.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__pidataBANK0 1F46 0 CODE 0 idataBANK0 dist/default/production\lcdtest.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+_port_en 22 0 BANK0 1 nvBANK0 dist/default/production\lcdtest.X.production.o
+_port_rs 24 0 BANK0 1 nvBANK0 dist/default/production\lcdtest.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\lcdtest.X.production.o
+_muda_pin 52 0 CODE 0 text11 dist/default/production\lcdtest.X.production.o
+_numero_a 4D 0 BANK0 1 bssBANK0 dist/default/production\lcdtest.X.production.o
+_numero_b 4B 0 BANK0 1 bssBANK0 dist/default/production\lcdtest.X.production.o
+_numero_c 44 0 BANK0 1 bssBANK0 dist/default/production\lcdtest.X.production.o
+__Hend_init 6 0 CODE 0 end_init -
+init_ram0 1F68 0 CODE 0 inittext dist/default/production\lcdtest.X.production.o
+sprintf@c 3E 0 BANK0 1 cstackBANK0 dist/default/production\lcdtest.X.production.o
+sprintf@f 32 0 BANK0 1 cstackBANK0 dist/default/production\lcdtest.X.production.o
+__end_of_byte 308 0 CODE 0 text8 dist/default/production\lcdtest.X.production.o
+__end_of_main FBC 0 CODE 0 maintext dist/default/production\lcdtest.X.production.o
+_ANSEL 188 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+__end_of_muda_pin AE 0 CODE 0 text11 dist/default/production\lcdtest.X.production.o
+__end_of_dpowers 3A 0 STRING 0 strings dist/default/production\lcdtest.X.production.o
+?_sprintf 32 0 BANK0 1 cstackBANK0 dist/default/production\lcdtest.X.production.o
+_PORTC 7 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+_PORTD 8 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+__end_of_limpa 1FB0 0 CODE 0 text5 dist/default/production\lcdtest.X.production.o
+_TRISC 87 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_limpa 1F86 0 CODE 0 text5 dist/default/production\lcdtest.X.production.o
+_tecla 4F 0 BANK0 1 dataBANK0 dist/default/production\lcdtest.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__initialization FBC 0 CODE 0 cinit dist/default/production\lcdtest.X.production.o
+__pbssBANK0 42 0 BANK0 1 bssBANK0 dist/default/production\lcdtest.X.production.o
+__pbssBANK1 A0 0 BANK1 1 bssBANK1 dist/default/production\lcdtest.X.production.o
+__pstrings 6 0 STRING 0 strings dist/default/production\lcdtest.X.production.o
+___wmul@product 74 0 COMMON 1 cstackCOMMON dist/default/production\lcdtest.X.production.o
+__size_of__muda_linha 0 0 ABS 0 - dist/default/production\lcdtest.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7DE FBC 22 2
+text1 0 8C 118 35 2
+text2 0 4AF 95E 100 2
+text3 0 FE 1FC 41 2
+text4 0 184 308 4B 2
+text5 0 FC3 1F86 15 2
+text6 0 30A 614 B0 2
+text7 0 1CF 39E 57 2
+text8 0 13F 27E 45 2
+text9 0 297 52E 73 2
+text10 0 57 AE 35 2
+text11 0 29 52 2E 2
+text12 0 3BA 774 F5 2
+text13 0 C1 182 3D 2
+text14 0 FD8 1FB0 28 2
+text15 0 226 44C 71 2
+nvBANK0 1 20 20 3C 1
+maintext 0 5AF B5E 22F 2
+cstackCOMMON 1 70 70 E 1
+inittext 0 FB0 1F60 13 2
+reset_vec 0 0 0 3 2
+bssBANK1 1 A0 A0 4B 1
+idataBANK0 0 FA3 1F46 D 2
+strings 0 3 6 23 2
+clrtext 0 F9B 1F36 8 2
+config 0 2007 400E 1 2

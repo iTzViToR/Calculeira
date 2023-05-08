@@ -1,0 +1,250 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 6 ]
+"7 X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+[v _muda_pin muda_pin `(v  1 e 1 0 ]
+"20
+[v _enable enable `(v  1 e 1 0 ]
+"28
+[v _nibble nibble `(v  1 e 1 0 ]
+"37
+[v _byte byte `(v  1 e 1 0 ]
+"47
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+"75
+[v _limpa limpa `(v  1 e 1 0 ]
+"81
+[v _escreve escreve `(v  1 e 1 0 ]
+"111
+[v _usa_caractere usa_caractere `(v  1 e 1 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"500 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"43 X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+[v __muda_linha _muda_linha `(v  1 e 1 0 ]
+"78
+[v __le_teclado _le_teclado `(uc  1 e 1 0 ]
+"143
+[v _main main `(v  1 e 1 0 ]
+"4 X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+[v _RS RS `VEi  1 e 2 0 ]
+[v _EN EN `VEi  1 e 2 0 ]
+[v _D4 D4 `VEi  1 e 2 0 ]
+[v _D5 D5 `VEi  1 e 2 0 ]
+[v _D6 D6 `VEi  1 e 2 0 ]
+[v _D7 D7 `VEi  1 e 2 0 ]
+"5
+[v _port_rs port_rs `*.39VEuc  1 e 2 0 ]
+[v _port_en port_en `*.39VEuc  1 e 2 0 ]
+[v _port_data port_data `*.39VEuc  1 e 2 0 ]
+"290 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f887.h
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"352
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"1540
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1602
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"3387
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3449
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"4181
+[v _RD0 RD0 `VEb  1 e 0 @64 ]
+"4184
+[v _RD1 RD1 `VEb  1 e 0 @65 ]
+"4187
+[v _RD2 RD2 `VEb  1 e 0 @66 ]
+"4190
+[v _RD3 RD3 `VEb  1 e 0 @67 ]
+"4193
+[v _RD4 RD4 `VEb  1 e 0 @68 ]
+"4196
+[v _RD5 RD5 `VEb  1 e 0 @69 ]
+"4199
+[v _RD6 RD6 `VEb  1 e 0 @70 ]
+"4202
+[v _RD7 RD7 `VEb  1 e 0 @71 ]
+"358 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+[v _dpowers dpowers `DC[5]ui  1 s 10 dpowers ]
+"38 X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+[v _linha_atual linha_atual `i  1 e 2 0 ]
+"39
+[v _tecla tecla `uc  1 e 1 0 ]
+"41
+[v _coluna_atual coluna_atual `uc  1 e 1 0 ]
+[s S36 . 12 `*.39VEuc 1 port_rs 2 0 `uc 1 pino_rs 1 2 `*.39VEuc 1 port_en 2 3 `uc 1 pino_en 1 5 `*.39VEuc 1 port_data 2 6 `uc 1 pino_d4 1 8 `uc 1 pino_d5 1 9 `uc 1 pino_d6 1 10 `uc 1 pino_d7 1 11 ]
+"129
+[v _lcd_pins lcd_pins `S36  1 e 12 0 ]
+"137
+[v _numero_a numero_a `i  1 e 2 0 ]
+"138
+[v _numero_b numero_b `i  1 e 2 0 ]
+"139
+[v _numero_c numero_c `i  1 e 2 0 ]
+"140
+[v _operacao operacao `i  1 e 2 0 ]
+"141
+[v _buffer buffer `[75]uc  1 e 75 0 ]
+"143
+[v _main main `(v  1 e 1 0 ]
+{
+"222
+} 0
+"111 X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+[v _usa_caractere usa_caractere `(v  1 e 1 0 ]
+{
+[v usa_caractere@lin lin `uc  1 a 1 wreg ]
+[v usa_caractere@lin lin `uc  1 a 1 wreg ]
+[v usa_caractere@col col `uc  1 p 1 12 ]
+[v usa_caractere@caractere caractere `uc  1 p 1 13 ]
+"113
+[v usa_caractere@lin lin `uc  1 a 1 7 ]
+"116
+} 0
+"500 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+"540
+[v sprintf@val val `ui  1 a 2 9 ]
+"507
+[v sprintf@c c `uc  1 a 1 12 ]
+"516
+[v sprintf@prec prec `c  1 a 1 8 ]
+"520
+[v sprintf@flag flag `uc  1 a 1 7 ]
+"502
+[v sprintf@ap ap `[1]*.4v  1 a 1 6 ]
+"500
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+[v sprintf@f f `*.24DCuc  1 p 1 0 ]
+"545
+[v sprintf@sp sp `*.4uc  1 a 1 11 ]
+"1560
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 8 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 10 ]
+"25
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"30
+} 0
+"75 X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\bibliotec_lcd.c
+[v _limpa limpa `(v  1 e 1 0 ]
+{
+"79
+} 0
+"47
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+{
+[s S36 . 12 `*.39VEuc 1 port_rs 2 0 `uc 1 pino_rs 1 2 `*.39VEuc 1 port_en 2 3 `uc 1 pino_en 1 5 `*.39VEuc 1 port_data 2 6 `uc 1 pino_d4 1 8 `uc 1 pino_d5 1 9 `uc 1 pino_d6 1 10 `uc 1 pino_d7 1 11 ]
+[v lcd_init@lcd_pins lcd_pins `*.4S36  1 a 1 wreg ]
+[v lcd_init@lcd_pins lcd_pins `*.4S36  1 a 1 wreg ]
+"50
+"47
+[v lcd_init@lcd_pins lcd_pins `*.4S36  1 a 1 6 ]
+"73
+} 0
+"81
+[v _escreve escreve `(v  1 e 1 0 ]
+{
+[v escreve@lin lin `uc  1 a 1 wreg ]
+[v escreve@lin lin `uc  1 a 1 wreg ]
+[v escreve@col col `uc  1 p 1 6 ]
+[v escreve@str str `*.26uc  1 p 2 7 ]
+"83
+[v escreve@lin lin `uc  1 a 1 13 ]
+"89
+} 0
+"37
+[v _byte byte `(v  1 e 1 0 ]
+{
+[v byte@escreve escreve `i  1 p 2 0 ]
+[v byte@dado dado `uc  1 p 1 2 ]
+"45
+} 0
+"28
+[v _nibble nibble `(v  1 e 1 0 ]
+{
+[v nibble@dado dado `i  1 p 2 8 ]
+"35
+} 0
+"20
+[v _enable enable `(v  1 e 1 0 ]
+{
+"26
+} 0
+"7
+[v _muda_pin muda_pin `(v  1 e 1 0 ]
+{
+[v muda_pin@_port _port `*.39VEuc  1 p 2 0 ]
+[v muda_pin@_pin _pin `i  1 p 2 2 ]
+[v muda_pin@_val _val `i  1 p 2 4 ]
+"17
+} 0
+"78 X:\GROBO\VITIN_PEKA_DO_MAL\PIC_display_lcd-main\PIC_display_lcd-main\lcdtest.X\lcdtest.c
+[v __le_teclado _le_teclado `(uc  1 e 1 0 ]
+{
+"127
+} 0
+"43
+[v __muda_linha _muda_linha `(v  1 e 1 0 ]
+{
+"76
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 7 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 6 ]
+[v ___awdiv@counter counter `uc  1 a 1 5 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"41
+} 0
